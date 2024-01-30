@@ -1,0 +1,92 @@
+*, 
+html, 
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'silkscreen', cursive;
+}
+
+:root {
+  --bg-primary: rgb(70,89,255);
+  --bg-secondary: #eaeaeaea;
+  --txt-primary: #000000;
+  --txt-secondary: rgb(0, 0, 0);
+  --icons-bg-primary: tomato;
+  --icons-bg-secondary: #777777;
+}
+
+/* .judul {
+  position: absolute;
+  top: 6%;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+} */
+
+.container {
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  background-color: var(--bg-primary);
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 200px;
+  border: 1px solid white;
+  background-color: var(--bg-secondary);
+  color: var(--txt-secondary);
+  padding: 32px;
+  margin: 8px;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, .5);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.title {
+  font-size: 2em;
+}
+
+.icons {
+  margin-top: 8px;
+  font-size: 1.5em;
+  color: var(--icons-bg-primary);
+}
+
+.description {
+  margin-top: 8px;
+  font-size: .5em;
+}
+
+.btn {
+  margin-top: 16px;
+  padding: 8px;
+  cursor: pointer;
+  border: none;
+  width: 100%;
+}
+
+.btn > a {
+  text-decoration: none;
+  color: black;
+}
+
+.btn:hover {
+  background-color: var(--bg-primary);
+  color: var(--txt-primary);
+  -ms-transform: rotate(2deg);
+  transform: rotate(2deg);
+  transition: .3s ease-in-out;
+}
